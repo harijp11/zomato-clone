@@ -1,0 +1,610 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: -1;/* Ensure the image is behind other content */
+     overflow:hidden ;
+     top: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .header-body-section {
+    position: relative;
+     z-index: 1; 
+ } 
+
+.header-body {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-top: -350px; 
+    align-items: center;
+}
+
+.header-body img {
+    height: 80px;
+    width: 285px;
+    color: white;
+    font-size: 20px;
+}
+.header-body p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.nav {
+    position: absolute; /* Fixed position to keep the navbar at the top */
+    top: 0;
+    width: 100%;
+    color: white;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; /* Added padding to give some space around navbar items */
+    top: 0;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer p {
+    padding: 5px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.search-container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow:hidden;
+    width: 900px;
+    margin-top: -200px;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 280px;
+}
+
+
+.select-search {
+    background-color: #ffffff;
+    border-right: transparent;
+    padding: 10px;
+    min-width: 100px;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.select-search select {
+   background-color: white;
+   border: transparent;
+   padding: 0;
+   min-width: 100px;
+   flex-shrink: 0;
+}
+
+.select-search i{
+    color: rgb(244, 125, 125);
+    font-size: 15px;
+}
+.borderline {
+    color:rgb(164, 135, 135); 
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 0px 40px;
+    font-size: 16px;
+  }
+
+.detectionLocation{
+    align-items: center;
+}
+.detectionLocation i{
+   color: red; 
+   margin-left:-585px ;
+   margin-top: -35px;
+}
+.serach-button i{
+margin-left:10px;
+color:rgb(164, 135, 135)
+}
+
+.serach-button input{
+    border: none;
+}
+
+.search-container input{
+    padding-left: 0px;
+}
+.section-1 h3 {
+    margin-top: 35px;
+}
+
+/**section1 feature**/
+.section-1{
+    margin-top: 10px;
+}
+.container-feature{
+    display: flex;
+    justify-content: space-evenly;
+}
+.features img{
+    overflow: hidden;
+    border-radius: 10px;
+    height: 350px;
+    width: 100%;
+    background-position-y:100px ;
+}
+.features{
+    width:300px ;
+    height:250px ;
+    border: 1px solid  #efecec;
+    margin-top: 300px;
+    border-radius: 10px;
+}
+.feature-image{
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.features h3,
+.features p{
+padding-left: 20px;
+margin-top: 4px;
+}
+.features:hover{
+    transition: transform 0.7s;
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.section{
+    padding: 50px 0;
+    
+}
+
+
+/**section 2***/
+.section-2-body-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-2-left{
+margin-bottom:300px;
+margin-top: -400px;
+}
+.selection-2-left h1{
+    font-size:40px;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.selection-2-left p{
+  font-size: 20px; 
+  letter-spacing: 1px;
+  font-weight: 200px;
+
+}
+.section-2-top{
+display: flex;
+align-items: center;
+margin-top: 100px;
+
+}
+.section-2-right{
+    align-items: flex-end;
+    display: flex;
+}
+.section-2-right p{
+    font-size: 15px;
+    margin-top: 70px;
+    margin-left:350px;
+    color: rgb(223, 114, 114);
+}
+.section-2-item{
+    max-width: 267px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+    height:100%;
+    overflow:hidden;
+    position: relative;
+}
+.section-2-item img{
+    width: 250px;
+    border-radius: 5px;
+    height: 240px;
+}
+
+
+.section-2-image-describition{
+    padding:0 10px;
+    position: absolute;
+    z-index: 2;
+    bottom:0;
+    background:rgba;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow:inset -50px -50px 50px rgba(0,0,0,0.2) ;
+
+    
+}
+.section-2-image-describition p{
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+.section-2-image-describition p:nth-child{
+    font: size 14px;
+}
+/**sec-3**/
+
+.section-3 {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.section-3-main h1{
+font-size: 40px;
+margin-left: 40px;
+margin-top: 120px;
+}
+.pop1 {
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(191, 179, 179);
+    width: 400px;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.section-3 .pop1 p,h3{
+    text-align: left;
+    padding-left: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.add {
+    display: flex;
+    align-items: left; /* Center items vertically within .add */
+    width: 100%; /* Full width of the parent container */
+    max-width: 300px; /* Optional: set a max-width for .add */
+    padding: 10px; /* Optional: add some padding */
+}
+
+.add p {
+    margin: 0; /* Remove default margin */
+}
+
+
+.add i {
+    margin-left: 290px; /* Push icon to the far right */
+    font-size: 20px; /* Adjust size as needed */
+    flex-direction: column;
+}
+
+/***sec-4**/
+.section-4{
+    display: flex;
+    margin:90px 0;
+    padding:40px 0;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);
+    margin-left: auto;
+}
+.flex-contact{
+    display: flex;
+    overflow: hidden;
+    
+
+}
+.flex-contact img{
+    width: 400px;
+    height:300px ;
+    margin-top: 70px;
+    object-fit: contain;
+    transform: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    border-radius: inherit;
+    filter: unset;
+    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+}
+
+
+
+.flex-app img{
+    width: 150px;
+    height: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    transform: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    border-radius: inherit;
+    filter: unset;
+    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+}
+.flex-contact p{
+    font-size: inherit;
+    margin: 0px 0px 2.5rem;
+    color: rgb(54, 54, 54);
+    width: 100%;
+    
+}
+
+.flex-contact h2{
+    color: rgb(28, 28, 28);
+    margin: 0px 0px 1.5rem;
+    font-weight: 200;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.flex-radio {
+    display: flex;
+    gap: 10px; /* Optional: Adjust spacing between radio buttons */
+    align-items: center;
+}
+
+
+.flex-radio input{
+    width: 20px;
+    height: 40px;
+    accent-color: rgb(239, 79, 95);
+    fill: rgb(255, 255, 255);
+}
+.flex-radio label{
+    font-size: 18px;
+    margin-top: 4px;
+    stroke: red;
+}
+.flex-email input{
+height: 40px;
+width: 240px;
+border-radius: 5px;
+border: 1px solid rgb(224, 53, 70);
+  
+}
+.flex-email button{
+    height: 40px;
+    border: 1px;
+    margin-left: 200px;
+    border-radius: 5px;
+    background-color: rgb(239, 79, 95); 
+    color: #ffffff;   
+}
+.flex-email p{
+    padding-top: 30px;
+    color: rgb(156, 156, 156);
+}
+.flex-email label{
+    margin-left: -240px;
+    color: rgb(156, 156, 156);
+}
+/**sec-5***/
+.section-5 {
+    margin-top: 150px;
+    align-items: center;
+}
+.section-5 h1{
+    margin: 0px 0px 2rem;
+    color: rgb(54, 54, 54);
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 200px;
+}
+.box{
+    display:flex;
+}
+.box p{
+    margin-top: 25px;
+    margin-left: 200px;
+    width: 1000px;
+    color: rgb(28, 28, 28);
+    height: 70px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(191, 179, 179);
+    padding: 23px 20px;
+}
+.box p i{
+   justify-content: flex-end; 
+   display: flex;
+   margin-top: -25px;
+}
+/*footer**/
+.first img{
+    width: 128px;
+    height: 32px;
+    margin-left: 19px
+
+}
+.section-6{
+    padding: 40px 120px;
+    background-color: rgb(244, 244, 253);
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+}
+.first-1{
+    display: flex;
+    justify-content:space-between;
+}
+
+.india {
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.6rem;
+    justify-content: flex-end;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    height: 35px;
+}
+
+
+.english {
+    cursor: pointer;
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.6rem;
+    justify-content: flex-end;
+    margin-left: 110px;
+    display: flex;
+    
+}
+.english img{
+    width: 25px;
+    height: 20px;
+    margin-top: 5px;
+}
+.india img{
+    width: 25px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 2px;
+}
+
+.india select{  
+    background-color:rgb(244, 244, 253);
+    border-color: rgb(244, 244, 253);
+    margin-right: 10px;
+    font-size: 16px;
+}
+.english select{
+    background-color:rgb(244, 244, 253);
+    border-color: rgb(244, 244, 253);
+    margin-right: 9px;
+    font-size: 16px;
+}
+
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    margin:30px 0;
+}
+.second div{
+    width:200px;
+}
+
+
+.second h4{
+    font-size: 17px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px 0px 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fo a{
+    display: 200px;
+    width: 200px;
+    margin-bottom:7px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgb(163, 160, 160);
+    font-size: 0.9rem;
+    
+}
+.second img{
+    width: 137px;
+    height: 40px;
+    margin-top: 11px;
+    cursor:pointer;
+    
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+}
+.box-4 i{
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+}
+.third{
+  padding:10px  0; 
+  color: rgb(158, 149, 149); 
+  font-size: 0.9rem;
+}
+
+
+
+
+.fo {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 10px; /* Optional: Adds spacing between items */
+}
+
+
